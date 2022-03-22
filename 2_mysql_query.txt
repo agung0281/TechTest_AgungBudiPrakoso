@@ -1,0 +1,1 @@
+SELECT tb_mahasiswa.mhs_nim,Nilai.nilai FROM tb_mahasiswa,Nilai,mk_nama WHERE mk_nama.mk_kode="MK303"AND Nilai.nilai = (SELECT max(nilai)FROM Nilai WHERE mk_kode ="MK303");
